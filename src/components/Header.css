@@ -1,0 +1,125 @@
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+}
+
+.nav-menu {
+  flex: 1;
+  margin: 0 2rem;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #0066cc;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.login-button {
+  color: #0066cc;
+  background-color: transparent;
+  border: 1px solid #0066cc;
+  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: rgba(0, 102, 204, 0.1);
+}
+
+.contact-button {
+  color: #fff;
+  background-color: #0066cc;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #0055aa;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  
+  .nav-menu {
+    order: 3;
+    width: 100%;
+    margin: 1rem 0 0;
+  }
+  
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin: 0.5rem 0;
+  }
+  
+  .header-buttons {
+    margin-left: auto;
+  }
+  
+  .login-button, .contact-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
